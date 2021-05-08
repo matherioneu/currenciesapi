@@ -2,6 +2,7 @@ package eu.matherion.currencies;
 
 import eu.matherion.currencies.database.CurrencyDatabase;
 import lombok.Getter;
+import lombok.Setter;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ import java.util.List;
 public class CurrenciesAPI {
 
     @Getter
+    @Setter
     private static JavaPlugin instance;
     @Getter
     protected static CurrenciesAPI currenciesAPI;
