@@ -1,0 +1,3 @@
+eu\matherion\currencies\CurrenciesAPI.class
+eu\matherion\currencies\database\CurrencyDatabase.class
+eu\matherion\currencies\Currency.class
