@@ -2,11 +2,13 @@ package eu.matherion.currencies.database;
 
 import eu.matherion.currencies.CurrenciesAPI;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+@RequiredArgsConstructor
 public class CurrencyDatabase {
 
     @Getter
@@ -16,14 +18,6 @@ public class CurrencyDatabase {
     private final String database;
     private final String username;
     private final String password;
-
-    public CurrencyDatabase(String address, int port, String database, String username, String password) {
-        this.address = address;
-        this.port = port;
-        this.database = database;
-        this.username = username;
-        this.password = password;
-    }
 
     public void connect() {
         if (!isConnected()) {
