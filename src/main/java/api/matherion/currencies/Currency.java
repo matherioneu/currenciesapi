@@ -1,7 +1,6 @@
-package eu.matherion.currencies;
+package api.matherion.currencies;
 
-import eu.matherion.currencies.database.CurrencyDatabase;
-import lombok.Getter;
+import api.matherion.currencies.database.CurrencyDatabase;
 import lombok.RequiredArgsConstructor;
 import org.bukkit.Bukkit;
 

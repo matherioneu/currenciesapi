@@ -1,6 +1,6 @@
-package eu.matherion.currencies.database;
+package api.matherion.currencies.database;
 
-import eu.matherion.currencies.CurrenciesAPI;
+import api.matherion.currencies.CurrenciesAPI;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
