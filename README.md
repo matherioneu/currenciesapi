@@ -11,7 +11,7 @@ Po nastavení můžete pracovat s dalšími objekty. Pojďme si vytvořit implem
 CurrencyDatabase creditsDB = new CurrencyDatabase(String address, int port, String database, String username, String password);
 ```
 
-Nyní máme hotový objekt pro pracování s databází. Můžeme si tedy vytvořit objekt Currency, který reprezentuje samotnou měnu, v našem případě Kredity, pokud ho nechceme přidávat do listu všech měn. Pokud ho chceme přidat do listu všech měn, tak nebudeme tvořit novou instanci, ale vytvoříme ho přes metodu **CurrenciesAPI.createCurrency(...);**. Do argumentu **currencyDatabase** dáme náš objekt **creditsDB**. Argument **name** můžete prozatím nechat null, protože se nikde nepoužívá, ale do budoucna bych ho doporučoval vyplnit. 
+Nyní máme hotový objekt pro pracování s databází. Můžeme si tedy vytvořit objekt Currency, který reprezentuje samotnou měnu, v našem případě Kredity. Můžeme ho vytvořit pomocí CurrenciesAPI nebo pomocí nové instance. Do argumentu **currencyDatabase** dáme náš objekt **creditsDB**. Argument **name** můžete prozatím nechat null, protože se nikde nepoužívá, ale do budoucna bych ho doporučoval vyplnit. 
 ```
 Currency credits = new Currency(CurrencyDatabase currencyDatabase, String name, String table, String nicknameColumn, String countColumn);
 
